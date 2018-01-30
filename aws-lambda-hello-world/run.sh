@@ -7,5 +7,7 @@ curl -v -d '{}' 'https://u80lf760ri.execute-api.us-east-1.amazonaws.com/prod/hel
 
 # upload jar
 aws configure
+/Users/ssarnobat/Desktop/work/src/chef-psr/../chef-psr/data_bags/aws/psr.json
 us-east-1
+json
 aws lambda  update-function-code --function-name helloworldjar --zip-file fileb://target/aws-lambda-hello-world-1.0-SNAPSHOT.jar

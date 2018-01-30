@@ -1,4 +1,4 @@
-package de.ozzc.lambda;
+package examples;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.LambdaLogger;
@@ -11,6 +11,7 @@ public class HelloWorldHandler implements RequestHandler<Map<String,Object>, Str
     public String handleRequest(Map<String,Object> input, Context context) {
         LambdaLogger logger = context.getLogger();
         logger.log("SRIDHAR received : " + input.toString());
-        return "{     'isBase64Encoded': true|false,       'statusCode': 200,        'headers': { 'Content-Type': 'application/json' },        'body': json.dumps({ 'username': 'bob', 'id': 20 })    }";
+        // I can't get this to work in AWS API Gateway. ProxyWithStream does work though.
+        return "{     'isBase64Encoded': true,       'statusCode': 200,        'headers': { 'Content-Type': 'application/json' },        'body': { 'username': 'bob', 'id': 20 }    }";
     }
 }
