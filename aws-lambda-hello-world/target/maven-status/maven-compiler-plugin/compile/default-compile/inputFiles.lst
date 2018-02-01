@@ -1,2 +1,3 @@
-/Users/ssarnobat/github/aws_lambda/aws-lambda-hello-world/src/main/java/examples/HelloWorldHandler.java
+/Users/ssarnobat/github/aws_lambda/aws-lambda-hello-world/src/main/java/examples/HelloWorldGet.java
 /Users/ssarnobat/github/aws_lambda/aws-lambda-hello-world/src/main/java/examples/ProxyWithStream.java
+/Users/ssarnobat/github/aws_lambda/aws-lambda-hello-world/src/main/java/examples/HelloWorldHandler.java
