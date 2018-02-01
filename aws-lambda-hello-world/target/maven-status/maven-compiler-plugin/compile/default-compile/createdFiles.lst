@@ -1,2 +1,4 @@
 examples/HelloWorldHandler.class
+examples/HelloWorldGet.class
 examples/ProxyWithStream.class
+example/Hello.class

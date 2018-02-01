@@ -15,7 +15,7 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
 
 public class HelloWorldGet implements RequestStreamHandler {
-
+  
   public void handleRequest(InputStream inputStream, OutputStream outputStream, Context context)
       throws IOException {
 
@@ -34,9 +34,8 @@ public class HelloWorldGet implements RequestStreamHandler {
         name = (String) qps.get("name");
       }
     }
-
     JSONObject responseBody = new JSONObject();
-    responseBody.put("message", "Hello 4 " + name);
+    responseBody.put("message", "Hello " + name);
 
     JSONObject responseJson = new JSONObject();
     responseJson.put("body", responseBody.toString());
